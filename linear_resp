@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# Set the input file for linear response from a previous optimization.
+# It uses 02-split-basis.py script
+
+# Usage : ./linear_resp name  
+
+
+
+
+
+cat > file <<!
+%oldChk=01-$1
+%mem=16GB
+%chk=02-$1
+%NProcShared=24
+# cam-b3lyp/gen pseudo=read TD=NStates=6 Geom=Check Guess=Read empiricaldispersion=gd3
+
+$1
+
+0 1
+
+!
+mv file 02-$1
+
+name="$(basename "$1")"
+
+sed -i 's/opt\/freq/td-dft/' gaussian.job
+
+
+sed -i '18,$s/01/02/' gaussian.job
+
+
+python3 02-split_basis.py $1'.gau'
+
+cat basis >> 02-$1
+
+rm basis

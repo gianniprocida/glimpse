@@ -1,0 +1,26 @@
+#! /bin/bash
+
+# Set the input file for an optimization. It uses 01-split_basis.py script
+
+# Usage : ./opt_freq file.gau . File.gau is a gaussian cartesian input
+
+
+cat > file <<!
+%Chk=01-${1::-4}
+%mem=16GB
+%NProcShared=24
+# cam-b3lyp/gen pseudo=read Opt Freq empiricaldispersion=gd3
+!
+cat $1  >> file
+sed -i -e '/Put/d' file
+mv file 01-${1::-4}
+
+name="$(basename "${1::-4}")"
+echo "01-${1::-4}.chk" "is being created"
+echo " "
+
+sed -i "s/PbI2_dmf/01-$name/" gaussian.job
+
+
+python3 01-split_basis.py 01-${1::-4}
+
