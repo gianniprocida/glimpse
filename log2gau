@@ -1,6 +1,0 @@
-#!/bin/bash 
-
-for i in *.log;do
-babel -g03 $i -ogau ${i::-4}.gau
-done
-

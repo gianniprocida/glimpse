@@ -1,0 +1,18 @@
+#!/bin/bash
+
+mkdir opt_$1
+
+shopt -s extglob
+for f in !(*.fchk|*.chk|*.py|*.gau) ; do
+ [ -d "$f" ] && continue                    # This will ignore folders
+  [[ -f "$f" && -x "$f" ]] && continue       # This will ignore files
+ mv $f opt_$1
+ done
+
+cd opt_$1
+for file in *01*;do mv $file ${file:3:11}"_"$1;done
+
+
+
+
+

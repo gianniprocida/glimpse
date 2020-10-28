@@ -1,0 +1,26 @@
+#! /bin/bash 
+
+# Check on your optmizations. 
+
+
+for i in */;do
+cd $i;
+if ls *02* >/dev/null 2>& 1 ;then        
+cat *02*| grep -l 'Normal termination'; word=$?
+
+if [ $word -eq 0 ]; then
+       echo 'td-dft done' :${i::-1}
+       echo ' ' 
+cd ..
+elif [ $word -eq 1 ] ; then
+       echo ' Something went wrong':${i::-1}
+       echo ' ' 
+cd ..
+fi
+else
+ echo "Not started yet":${i::-1}
+ echo  ' ' 
+cd ..
+fi
+done
+

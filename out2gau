@@ -1,6 +1,0 @@
-#!/bin/bash 
-
-for i in *.out;do
-babel -iout $i -ogau ${i::-4}.gau
-done
-

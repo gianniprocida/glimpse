@@ -6,7 +6,7 @@
 for i in */;do
 cd $i;
 if ls *01* >/dev/null 2>& 1 ;then             # Check if there are *.out files
-cat *01*| grep -l 'Optimization completed'; word=$?
+cat *01*| grep -l 'Stationary point found'; word=$?
 
 if [ $word -eq 0 ]; then
        echo 'opt done' :${i::-1}
