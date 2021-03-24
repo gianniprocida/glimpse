@@ -7,7 +7,7 @@ gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj
 
 And there are the following subdirectories:
 
-gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-DMSO
+* gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-DMSO
 
 gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-DMF
 
