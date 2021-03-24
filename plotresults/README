@@ -4,6 +4,7 @@ To run the script : python3 uvvis.py
 
 * total_elec.prop -> Plot of complexes vs gap, lumo, homo in one plot with multiple Y axis 
 ( homo and lumo are along the multiple axis). To run the script: python3 total_elec.prop.py outputPbCl2X4.out
+ 
 
 
 * plt_levels.py ->  Plot homo,homo-1,homo-2, lumo, lumo+1 and lumo+2 for PbCl2X4 complexes. 
