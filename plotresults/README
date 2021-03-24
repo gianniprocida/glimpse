@@ -2,6 +2,11 @@
 To run the script : python3 uvvis.py DMSO.out. (See the DMSO.pdf file as an example)
 
 
+![Image](https://github.com/gianniprocida/glimpse/edit/master/plotresults/DMSO.pdf)
+
+
+
+
 * total_elec.prop -> Plot of complexes vs gap, lumo, homo in one plot with multiple Y axis 
 ( homo and lumo are along the multiple axis). To run the script: python3 total_elec.prop.py outputPbCl2X4.out
 ( See the electr_PbCl2X4.pdf file as an example) 
