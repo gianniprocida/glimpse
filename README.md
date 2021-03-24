@@ -9,17 +9,17 @@ And there are the following subdirectories:
 
 * gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-DMSO
 
-gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-DMF
+* gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-DMF
 
-gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-GBL
+* gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-GBL
 
-gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-PC
+* gss/work/edba4025/glimpse/pbe_pcm+tddft/I2_gd3bj/I-PC
 
 
 
 where your calculations are stored. If you run from terminal:
 
-python3 get_hlgap.py and a file structured like this will be created:
+- python3 get_hlgap.py and a file structured like this will be created:
 
 
 species    HL_GAP      HOMO      LUMO
