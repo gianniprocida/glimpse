@@ -18,7 +18,7 @@ To run the script : python3 uvvis.py DMSO.out. (See the DMSO.pdf file as an exam
 * plt_levels.py ->  Plot homo,homo-1,homo-2, lumo, lumo+1 and lumo+2 for PbCl2X4 complexes. 
 To run it: python3 plt_levels.py outputPbCl2X4.out
 
-![Image](https://github.com/gianniprocida/glimpse/edit/master/plotresults/plt_levels.pdf)
+![Image](https://github.com/gianniprocida/glimpse/edit/master/plotresults/energylevelsPbCl2X4.pdf)
 
 
 * plotHandL.py -> Plot homo and lumo levels
