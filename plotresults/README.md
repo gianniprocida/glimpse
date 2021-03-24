@@ -1,6 +1,5 @@
 * uvvis.py -> Plot a broadened UV-vis absorption spectrum from Gaussian in nm or eV.
-To run the script : python3 uvvis.py DMSO.out. (See the DMSO.pdf file as an example)
-
+To run the script : python3 uvvis.py DMSO.out. 
 
 ![Image](https://github.com/gianniprocida/glimpse/edit/master/plotresults/DMSO.pdf)
 
