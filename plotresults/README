@@ -1,5 +1,5 @@
-*  uv.vis.py -> Plot a broadened UV-vis absorption spectrum from Gaussian in nm or eV.
-To run the script :
+*  uvvis.py -> Plot a broadened UV-vis absorption spectrum from Gaussian in nm or eV.
+To run the script : python3 uvvis.py
 
 
 * total_elec.prop -> Plot of complexes vs gap, lumo, homo in one plot with multiple Y axis 
@@ -13,7 +13,7 @@ To run it: python3 plt_levels.py outputPbCl2X4.out
 * plotHandL.py -> Plot homo and lumo levels
 
 * grab.py ->   It takes as input the file with all calculations ( see file outputBr2.out) and gives you
-7 lists i.e. homo, gap, hminus1,lplus1,firs_exc, lumo, oscillator strength, names. 
+7 lists i.e. homo, gap, hminus1,lplus1,firs_exc, lumo, oscillator strength, names.  
 
 * plot3Dfirstexcvssolv.py ->  Plot first excitation energy vs solvents. Oscillator strength as colormaps. 
 It refers to the first excited state. To run it: python3 plot3dfirstexcvssolv.py 
