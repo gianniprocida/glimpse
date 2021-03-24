@@ -22,6 +22,7 @@ To run it: python3 plt_levels.py outputPbCl2X4.out
 
 
 * plotHandL.py -> Plot homo and lumo levels
+To run it : python3 plotHandL.py outputPbCl2X4.out
 
 ![Image](https://github.com/gianniprocida/glimpse/edit/master/plotresults/homolumoPbCl2X4.pdf)
 
