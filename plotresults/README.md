@@ -1,3 +1,5 @@
+Useful script to create plots.
+
 * uvvis.py -> Plot a broadened UV-vis absorption spectrum from Gaussian in nm or eV.
 To run the script : python3 uvvis.py DMSO.out. 
 
